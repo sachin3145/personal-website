@@ -11,7 +11,7 @@ const page = () => {
           <Heading as="h2" variant="page-titel">
             Sachin Yadav
           </Heading>
-          <p>Competitive Programmer / Developer / Thinker</p>
+          <p>Engineer / Competitive Programmer / Developer</p>
         </Box>
       </Box>
     </Container>
