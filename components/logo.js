@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Text, useColorModeValue } from "@chakra-ui/react";
 import styled from "@emotion/styled";
+import FootprintIcon from "./icons/footprint.js";
 
 const LogoBox = styled.span`
 font-weight: bold;
@@ -12,19 +13,17 @@ height: 30px;
 line-height: 20px;
 padding: 10px;
 
-&:hover img{
+&:hover svg{
   transform: rotate(20deg);
 }
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
-  
   return (
     <Link href="/">
       
-        <LogoBox>
-          <Image src={footPrintImg} width="20" height="20" alt="logo" />
+      <LogoBox>
+          <FootprintIcon />
           <Text 
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Roundede 1c'
