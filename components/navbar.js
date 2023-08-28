@@ -16,7 +16,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
-import dynamic from "next/dynamic";
 
 
 const LinkItem = ({ href, path, children }) => {
@@ -109,4 +108,4 @@ const Navbar = props => {
   )
 }
 
-export default dynamic(()=>Promise.resolve(Navbar), {ssr: false});
+export default Navbar;
