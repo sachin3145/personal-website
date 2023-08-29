@@ -1,6 +1,6 @@
 import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
 import Section from "../components/section";
-import { WorkGridItem } from "../components/grid-item";
+import { GridItemStyle, WorkGridItem } from "../components/grid-item";
 import thumbInloop from "../public/images/works/inloop/thumbnail.png";
 import thumbAuthenticator from '../public/images/works/authenticator/thumbnail.png'
 import thumbVisualizer from '../public/images/works/sorting-visualizer/thumbnail.png'
@@ -50,6 +50,7 @@ const Works = () => {
               </WorkGridItem>
             </Section>
           </SimpleGrid>
+          <GridItemStyle />
         </Container>
       )}
     </>
