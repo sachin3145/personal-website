@@ -12,14 +12,13 @@ from '@chakra-ui/react'
 const NotFound = () => {
   return (
     <Container align="center">
-      <Heading as="h1" align="left">Not Found</Heading>
+      <Heading as="h1" align="left" mb={10}>Not Found</Heading>
       <svg
         version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        width="300.000000pt"
-        height="300.000000pt"
         viewBox="0 0 260.000000 245.000000"
         preserveAspectRatio="xMidYMid meet"
+        width="100%"
       >
         <metadata>
           Created by potrace 1.11, written by Peter Selinger 2001-2013
