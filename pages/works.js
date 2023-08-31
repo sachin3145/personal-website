@@ -28,7 +28,7 @@ const Works = () => {
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
               <Section>
                 <WorkGridItem
-                  id="authenticator"
+                  id="Next-Authenticator"
                   title="Next-Authenticator"
                   thumbnail={thumbAuthenticator}
                 >
@@ -37,7 +37,7 @@ const Works = () => {
               </Section>
               <Section>
                 <WorkGridItem
-                  id="inloop"
+                  id="InLoop"
                   title="InLoop"
                   thumbnail={thumbInloop}
                 >
@@ -46,8 +46,8 @@ const Works = () => {
               </Section>
               <Section>
                 <WorkGridItem
-                  id="sorting-visualizer"
-                  title="Sorting Visualizer"
+                  id="Sorting-Visualizer"
+                  title="Sorting-Visualizer"
                   thumbnail={thumbVisualizer}
                 >
                   Visual demonstration of sorting algorithms
@@ -55,8 +55,8 @@ const Works = () => {
               </Section>
               <Section>
                 <WorkGridItem
-                  id="particlejs"
-                  title="Particle Js"
+                  id="Particle-JS"
+                  title="Particle JS"
                   thumbnail={thumbParticle}
                 >
                   Canvas Implementation of particle interaction
