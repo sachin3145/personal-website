@@ -141,7 +141,7 @@ const page = () => {
         <Divider />
         <Box my={4}>
           <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button width="100%" rightIcon={<ChevronRightIcon />} colorScheme="teal">
               CODING PROFILES / PROJECTS
             </Button>
           </NextLink>

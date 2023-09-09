@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
+import { Container, Box, Button, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
 import Section from "../components/section";
 import { GridItemStyle, WorkGridItem, GridItem } from "../components/grid-item";
 import thumbInloop from "../public/images/works/inloop/thumbnail.png";
@@ -11,7 +11,8 @@ import thumbCodechef from '../public/images/profiles/codechef.png'
 import thumbHackerRank from '../public/images/profiles/hackerrank.png'
 import { useEffect, useState } from 'react'
 import Layout from "../components/layouts/article";
-
+import NextLink from 'next/link'
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 const Works = () => {
 
@@ -26,6 +27,9 @@ const Works = () => {
       {domLoaded && (
         <Layout>
           <Container>
+            <Heading as="h2" variant="page-title" mb={4}>
+              Works
+            </Heading>
             <Heading as="h3" fontSize={20} mb={4}>
               Coding Profiles
             </Heading>
@@ -62,7 +66,7 @@ const Works = () => {
             <GridItemStyle />
             <Divider mb={4} />
             <Heading as="h3" fontSize={20} mb={4}>
-              Works
+              Projects
             </Heading>
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
               <Section>
@@ -102,6 +106,14 @@ const Works = () => {
                 </WorkGridItem>
               </Section>
             </SimpleGrid>
+            <Divider />
+            <Box my={4} align="right">
+              <NextLink href="/contact">
+                <Button width={"100%"} rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                  CONTACT ME
+                </Button>
+              </NextLink>
+            </Box>
             <GridItemStyle />
           </Container>
         </Layout>
