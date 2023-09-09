@@ -71,13 +71,7 @@ const page = () => {
             adeptly applying them to develop innovative solutions aimed at
             enhancing workplace efficiency and tackling novel problems.
           </Paragraph>
-          <Box my={4}>
-            <NextLink href="/works">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                SEE MY WORK
-              </Button>
-            </NextLink>
-          </Box>
+
         </Section>
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
