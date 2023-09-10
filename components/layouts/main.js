@@ -21,8 +21,10 @@ const Main = ({ children, router }) => {
               content="width=device-width, initial-scale=1"
             />
             <title>Sachin Yadav - Homepage</title>
+            <link rel="icon" href="/images/icon.png" type="image/x-icon" />
           </Head>
           <Navbar path={router.asPath} />
+          <Divider my={1} visibility={0}/>
           <Container maxW={'container.md'} pt={14}>
             {children}
             <Footer />

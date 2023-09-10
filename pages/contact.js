@@ -71,7 +71,7 @@ const page = () => {
                 </Button>
               </Link>
             </ListItem>
-            <ListItem>
+            {/* <ListItem>
               <Link href="" target="_blank">
                 <Button
                   variant="ghost"
@@ -81,7 +81,7 @@ const page = () => {
                   @sachin3145
                 </Button>
               </Link>
-            </ListItem>
+            </ListItem> */}
           </List>
         </Section>
         <Divider />
