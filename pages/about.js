@@ -2,7 +2,6 @@ import {
   Container,
   Box,
   Heading,
-  useColorModeValue,
   Badge,
   Link,
   Button,
@@ -11,7 +10,7 @@ import {
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { ItemSection, ItemLabel } from '../components/item'
+import { ItemSection } from '../components/item'
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 

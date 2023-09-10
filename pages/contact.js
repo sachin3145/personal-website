@@ -2,21 +2,16 @@ import {
   Container,
   Box,
   Heading,
-  useColorModeValue,
-  Badge,
   Link,
   Button,
   Divider,
-  Stack,
   List,
   ListItem,
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
-import { ChevronLeftIcon, ExternalLinkIcon } from '@chakra-ui/icons'
-import { ItemSection, ItemLabel } from '../components/item'
+import { ChevronLeftIcon} from '@chakra-ui/icons'
 import NextLink from 'next/link'
-import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoGoogle } from 'react-icons/io5'
 import { EmailIcon } from '@chakra-ui/icons'
 const page = () => {
@@ -71,17 +66,17 @@ const page = () => {
                 </Button>
               </Link>
             </ListItem>
-            {/* <ListItem>
+            <ListItem hidden={true}>
               <Link href="" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoInstagram />}
                 >
-                  @sachin3145
+                  @
                 </Button>
               </Link>
-            </ListItem> */}
+            </ListItem>
           </List>
         </Section>
         <Divider />

@@ -9,7 +9,7 @@ import useDownloader from 'react-use-downloader'
 
 
 const page = () => {
-  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
+  const {download} =
     useDownloader()
   return (
     <Layout>
