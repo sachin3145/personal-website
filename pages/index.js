@@ -1,15 +1,16 @@
 import {Container, Box, Heading, Image, useColorModeValue, Button, Spacer, Flex, SimpleGrid } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
-import { ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import { JourneySection, JourneyYear } from "../components/journey";
 import Layout from "../components/layouts/article";
-
-import { GridItem } from "../components/grid-item";
+import useDownloader from 'react-use-downloader'
 
 
 const page = () => {
+  const { size, elapsed, percentage, download, cancel, error, isInProgress } =
+    useDownloader()
   return (
     <Layout>
       <Container>
@@ -52,8 +53,8 @@ const page = () => {
             About
           </Heading>
           <Paragraph>
-            I am a dedicated student currently pursuing Bachelor's Degree
-            in Computer Science and Engineering from the University School of
+            I am a dedicated student currently pursuing Bachelor's Degree in
+            Computer Science and Engineering from the University School of
             Information, Communication, and Technology, GGSIPU.
           </Paragraph>
           <Box my={4}>
@@ -67,9 +68,9 @@ const page = () => {
             Work
           </Heading>
           <Paragraph>
-            My passion lies in honing my problem-solving skills and
-            adeptly applying them to develop innovative solutions aimed at
-            enhancing workplace efficiency and tackling novel problems.
+            My passion lies in honing my problem-solving skills and adeptly
+            applying them to develop innovative solutions aimed at enhancing
+            workplace efficiency and tackling novel problems.
           </Paragraph>
           <Box my={4}>
             <NextLink href="/works">
@@ -95,6 +96,11 @@ const page = () => {
             <JourneyYear>2021 - Present</JourneyYear>
             B.Tech. in Computer Science & Engineering
           </JourneySection>
+        </Section>
+        <Section>
+          <Button colorScheme="pink" onClick={() => download("resume.pdf", 'resume.pdf')}>
+            Download Resume
+          </Button>
         </Section>
       </Container>
     </Layout>
