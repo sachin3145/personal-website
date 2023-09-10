@@ -7,7 +7,7 @@ import { JourneySection, JourneyYear } from "../components/journey";
 import Layout from "../components/layouts/article";
 
 import { GridItem } from "../components/grid-item";
-import {IoLogoInstagram, IoLogoGithub, IoLogoLinkedin} from 'react-icons/io5'
+
 
 const page = () => {
   return (
@@ -52,8 +52,8 @@ const page = () => {
             About
           </Heading>
           <Paragraph>
-            Sachin is a dedicated student currently pursuing a Bachelor's Degree
-            in Computer Science and Engineering at the University School of
+            I am a dedicated student currently pursuing Bachelor's Degree
+            in Computer Science and Engineering from the University School of
             Information, Communication, and Technology, GGSIPU.
           </Paragraph>
           <Box my={4}>
@@ -67,7 +67,7 @@ const page = () => {
             Work
           </Heading>
           <Paragraph>
-            Their passion lies in honing their problem-solving skills and
+            My passion lies in honing my problem-solving skills and
             adeptly applying them to develop innovative solutions aimed at
             enhancing workplace efficiency and tackling novel problems.
           </Paragraph>

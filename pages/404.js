@@ -8,6 +8,7 @@ import {
   Button
 }
 from '@chakra-ui/react'
+import { ChevronLeftIcon } from '@chakra-ui/icons';
 
 const NotFound = () => {
   return (
@@ -65,7 +66,7 @@ const NotFound = () => {
       <Divider my={6} />
       <Box my={6} align="center">
         <NextLink href="/">
-          <Button colorScheme="teal">Return to Home</Button>
+          <Button leftIcon={ <ChevronLeftIcon/>} colorScheme="teal">Return to Home</Button>
         </NextLink>
       </Box>
     </Container>
