@@ -12,9 +12,9 @@ import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import { ChevronLeftIcon} from '@chakra-ui/icons'
 import NextLink from 'next/link'
-import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoGoogle } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin} from 'react-icons/io5'
 import { EmailIcon } from '@chakra-ui/icons'
-const page = () => {
+const Page = () => {
   return (
     <Layout>
       <Container>
@@ -96,4 +96,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

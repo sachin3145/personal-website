@@ -14,7 +14,7 @@ import { ItemSection } from '../components/item'
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
-const page = () => {
+const Page = () => {
   return (
     <Layout>
       <Container>
@@ -87,7 +87,7 @@ const page = () => {
             OOPS
           </Badge>
           <Badge colorScheme="green" m={1}>
-            RESTFUL API'S
+            RESTFUL API&apos;S
           </Badge>
           <Badge colorScheme="green" m={1}>
             WEB SOCKETS
@@ -150,4 +150,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

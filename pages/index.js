@@ -1,14 +1,14 @@
-import {Container, Box, Heading, Image, useColorModeValue, Button, Spacer, Flex, SimpleGrid } from "@chakra-ui/react";
+import {Container, Box, Heading, Image, useColorModeValue, Button} from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
-import { ChevronDownIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import { JourneySection, JourneyYear } from "../components/journey";
 import Layout from "../components/layouts/article";
 import useDownloader from 'react-use-downloader'
 
 
-const page = () => {
+const Page = () => {
   const {download} =
     useDownloader()
   return (
@@ -53,7 +53,7 @@ const page = () => {
             About
           </Heading>
           <Paragraph>
-            I am a dedicated student currently pursuing Bachelor's Degree in
+            I am a dedicated student currently pursuing Bachelor&apos;s Degree in
             Computer Science and Engineering from the University School of
             Information, Communication, and Technology, GGSIPU.
           </Paragraph>
@@ -107,4 +107,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default Page;
