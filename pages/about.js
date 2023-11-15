@@ -130,7 +130,7 @@ const Page = () => {
               USICT, GGSIPU
               <ExternalLinkIcon mx="2px" />
             </Link>
-            )<Badge colorScheme="green">Sept 2023 - Present</Badge>
+            ) <Badge colorScheme="green">Sept 2023 - Present</Badge>
           </ItemSection>
           <ItemSection>
             ICPC Club Lead, (
