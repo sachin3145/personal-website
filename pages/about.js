@@ -36,7 +36,7 @@ const Page = () => {
               USICT, GGSIPU
               <ExternalLinkIcon mx="2px" />
             </Link>
-            ) <Badge>9.25 CGPA</Badge>{' '}
+            ) <Badge>9.067 CGPA</Badge>{' '}
             <Badge colorScheme="green">2025 Expected</Badge>
           </ItemSection>
           <ItemSection>
@@ -125,22 +125,30 @@ const Page = () => {
             POSITION OF RESPONSIBILITY
           </Heading>
           <ItemSection>
+            Student Representative, (
+            <Link target="_blank" href="http://www.ipu.ac.in/usict/">
+              USICT, GGSIPU
+              <ExternalLinkIcon mx="2px" />
+            </Link>
+            )<Badge colorScheme="green">Sept 2023 - Present</Badge>
+          </ItemSection>
+          <ItemSection>
             ICPC Club Lead, (
             <Link target="_blank" href="https://usict.acm.org/">
               USS ACM Student Chapter
               <ExternalLinkIcon mx="2px" />
             </Link>
-            ) <Badge colorScheme="green">Dec 2022 - Present</Badge>
-          </ItemSection>
-          <ItemSection>
-            Class Representative{' '}
-            <Badge colorScheme="green">Jan 2022 - Present</Badge>
+            ) <Badge colorScheme="green">Dec 2022 - Nov 2023</Badge>
           </ItemSection>
         </Section>
         <Divider />
         <Box my={4}>
           <NextLink href="/works">
-            <Button width="100%" rightIcon={<ChevronRightIcon />} colorScheme="teal">
+            <Button
+              width="100%"
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+            >
               CODING PROFILES / PROJECTS
             </Button>
           </NextLink>

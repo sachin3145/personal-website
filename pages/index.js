@@ -98,7 +98,7 @@ const Page = () => {
           </JourneySection>
         </Section>
         <Section>
-          <Button hidden={true} colorScheme="pink" onClick={() => download("resume.pdf", 'resume.pdf')}>
+          <Button hidden={false} colorScheme="pink" onClick={() => download("/files/resume.pdf", 'resume.pdf')}>
             Download Resume
           </Button>
         </Section>
