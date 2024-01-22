@@ -101,7 +101,7 @@ const Page = () => {
           </JourneySection>
         </Section>
         <Section>
-          <a href="/files/resume.pdf">
+          <a href="/files/Resume.pdf">
             <Button
               hidden={false}
               colorScheme="pink"
