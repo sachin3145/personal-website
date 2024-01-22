@@ -1,16 +1,19 @@
-import {Container, Box, Heading, Image, useColorModeValue, Button} from "@chakra-ui/react";
-import Section from "../components/section";
-import Paragraph from "../components/paragraph";
-import { ChevronRightIcon } from "@chakra-ui/icons";
-import NextLink from "next/link";
-import { JourneySection, JourneyYear } from "../components/journey";
-import Layout from "../components/layouts/article";
-import useDownloader from 'react-use-downloader'
-
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  useColorModeValue,
+  Button
+} from '@chakra-ui/react'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import NextLink from 'next/link'
+import { JourneySection, JourneyYear } from '../components/journey'
+import Layout from '../components/layouts/article'
 
 const Page = () => {
-  const {download} =
-    useDownloader()
   return (
     <Layout>
       <Container>
@@ -53,8 +56,8 @@ const Page = () => {
             About
           </Heading>
           <Paragraph>
-            I am a dedicated student currently pursuing Bachelor&apos;s Degree in
-            Computer Science and Engineering from the University School of
+            I am a dedicated student currently pursuing Bachelor&apos;s Degree
+            in Computer Science and Engineering from the University School of
             Information, Communication, and Technology, GGSIPU.
           </Paragraph>
           <Box my={4}>
@@ -98,13 +101,18 @@ const Page = () => {
           </JourneySection>
         </Section>
         <Section>
-          <Button hidden={false} colorScheme="pink" onClick={() => download("/files/resume.pdf", 'resume.pdf')}>
-            Download Resume
-          </Button>
+          <a href="/files/resume.pdf">
+            <Button
+              hidden={false}
+              colorScheme="pink"
+            >
+              MY RESUME
+            </Button>
+          </a>
         </Section>
       </Container>
     </Layout>
   )
 }
 
-export default Page;
+export default Page
