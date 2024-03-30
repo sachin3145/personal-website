@@ -5,7 +5,7 @@ import {
   Badge,
   Link,
   Button,
-  Divider,
+  Divider
 } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
@@ -36,7 +36,7 @@ const Page = () => {
               USICT, GGSIPU
               <ExternalLinkIcon mx="2px" />
             </Link>
-            ) <Badge>9.067 CGPA</Badge>{' '}
+            ) <Badge>9.028 CGPA</Badge>{' '}
             <Badge colorScheme="green">2025 Expected</Badge>
           </ItemSection>
           <ItemSection>
