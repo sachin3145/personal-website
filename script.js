@@ -333,4 +333,7 @@ input.addEventListener("keydown", (e) => {
 
 /* KEEP FOCUS LIKE A TERMINAL */
 document.addEventListener("click", () => input.focus());
+input.addEventListener("input", () => {
+  input.value = input.value.toLowerCase();
+});
 
