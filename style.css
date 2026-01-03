@@ -1,0 +1,76 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* kill page scroll */
+}
+
+body {
+  background: #000;
+  color: #00ff88;
+}
+
+/* Terminal container */
+.terminal {
+  height: 100%;
+  padding: 20px;
+  overflow-y: auto;
+
+  /* canonical text metrics */
+  font-size: 16px;
+  line-height: 1.4;
+
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar (Chrome/Safari/Edge) */
+.terminal::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+#output {
+  white-space: pre-wrap;
+}
+
+/* Input line */
+.input-line {
+  display: flex;
+  margin-top: 8px;
+  padding-bottom: 10px; /* breathing room */
+}
+
+.prompt {
+  margin-right: 8px;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  width: 100%;
+
+  font-size: inherit;
+  line-height: inherit;
+
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;          /* no blue/purple */
+  text-decoration: underline;
+  background: none;
+  border: none;
+  font: inherit;
+}
+
